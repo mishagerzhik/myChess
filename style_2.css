@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 236, 195);
+}
+
+.logo {
+    color: rgb(179, 117, 60);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: rgb(255, 187, 109);
+    border-radius: 30px;
+}
+.bg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 850px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(58, 47, 26);
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+.deck {
+    width: 800px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+.figures {
+    cursor: pointer;
+}
+.deck__row {
+    display: flex;
+}
+.deck__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.deck__box_black {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(197, 157, 111);
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border: 1px solid black;
+}
+
+.wrapper {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.figure-place {
+    margin-top: 20px;
+    width: 400px;
+    height: 850px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.table {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mode {
+    position: absolute;
+    z-index: 3;
+    background: rgb(125, 220, 236);
+    width: 200px;
+    height: 30px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    left: 6.27%;
+    top: 140px;
+    transform: matrix(1, 0, 0.466308, 1, 0, 0)
+
+}
+
+.rotate {
+    position: absolute;
+    z-index: 2;
+    background: rgb(125, 220, 236);
+    width: 200px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    right: 6.27%;
+    top: 140px;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0)
+}
+.close-rotate {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 30px;
+    border: none;
+    right: 6.27%;
+    top: 140px;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0)
+}
+.start {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: rgba(128, 128, 128, 0.322);
+    animation-name: pulse; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes pulse { 
+    0% {color: rgba(102, 102, 102, 0.39);}
+    100% {color: rgb(102, 102, 102);}
+}
+
+
+
+.rotated_on {
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.deck_bg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 850px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+}
+
+.descr {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 1400px;
+    top: 150px;
+    white-space: nowrap;
+    margin-left: 25px;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 0.322);
+    z-index: 1;
+}
+
+.won-modal {
+    display: none;
+    white-space: nowrap;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    position:  absolute;
+    z-index: 10000;
+    color: pink;
+
+}
+
+.won-modal h2 {
+    animation-name: rotation; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6, end);
+    animation-timing-function: initial;
+
+}
+@keyframes rotation { 
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+.show {
+    display: block;
+}

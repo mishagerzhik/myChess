@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyChess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <h1>My Chess</h1>
+    </div>
+    <div class="flex">
+        <div class="wrapper_1">
+            <button class="mode">simulation mode</button>
+            <button class="rotate">rotate the board</button>
+        </div>
+        <div class="wrapper_2">
+            <div id="left" class="figure-place"></div>
+            <div class="bg">
+                <div class="deck">
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bR.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bN.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bB.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bQ.png" alt=""></div>
+                        <div class="deck__box"><img id="blackKing" class="figures figures_black" src="icon/top2/bK.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bB.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bN.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bR.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_black" src="icon/top2/bP.png" alt=""></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box deck__box_black"></div>
+                        <div class="deck__box"></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wP.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wR.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wN.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wB.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wQ.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img id="whiteKing" class="figures figures_white " src="icon/top2/wK.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wB.png" alt=""></div>
+                        <div class="deck__box deck__box_black"><img class="figures figures_white" src="icon/top2/wN.png" alt=""></div>
+                        <div class="deck__box"><img class="figures figures_white" src="icon/top2/wR.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="right" class="figure-place"></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="won-modal">
+        <h2>GAME OVER</h2>
+    </div>
+    <div class="modal-disclaimer hide">
+        <div class="disclaimer-overlay">
+            <div class="disclaimer-window">
+                <h2 class="modal__title">disclaimer!</h2>
+                <p class="modal__descr">This is a casual chess game, all the pieces move exactly the way you want. </p>
+                <p class="modal__descr_c">"DON'T KNOW - DO NOT TAKE IT".</p>
+                <div class="button-wrapper">
+                    <button class="modal_ok">agree</button>
+                    <button class="modal_cancel">refuse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sad-smile">
+        <img src="./icon/Sad-512.webp" alt="">
+    </div>
+    <p class="start">press ENTER to restart the game</p>
+    <div class="close-rotate"></div>
+    <script src="script.js"></script>
+</body>
+</html>
